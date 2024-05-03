@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="">Custom Applications</category>
+        <description>Dog Adoption Application</description>
+        <device_type>browser</device_type>
+        <hint>Dog Adoption Application</hint>
+        <name/>
+        <order/>
+        <roles>x_938877_fetchapp.user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-29 20:26:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ec6aec769739c650e15871571153afd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FetchApp</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="FetchApp" source="x_938877_fetchapp">4a2828769775c650e15871571153af0d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FetchApp">4a2828769775c650e15871571153af0d</sys_scope>
+        <sys_update_name>sys_app_application_ec6aec769739c650e15871571153afd1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-29 20:26:02</sys_updated_on>
+        <title>FetchApp</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a63a6cf69739c650e15871571153afd0" label="Adoption Centre" max_length="40" name="x_938877_fetchapp_adoption_centre" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="100" name="email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number_2" type="string"/>
+        <element label="Phone" max_length="40" name="phone" type="phone_number_e164"/>
+    </element>
+</database>

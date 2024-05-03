@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d59920f69739c650e15871571153afd3" label="Dogs" max_length="40" name="x_938877_fetchapp_dogs" type="collection">
+        <element label="Adoption Centre" max_length="32" name="adoption_centre" reference="x_938877_fetchapp_adoption_centre" type="reference"/>
+        <element label="Age" max_length="40" name="age" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Bio" max_length="4000" name="bio" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Breed" max_length="40" name="breed" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Labrador" sequence="0" value="labrador"/>
+                <element inactive_on_update="false" label="German Shepherd" sequence="1" value="german_shepherd"/>
+                <element inactive_on_update="false" label="Mixed" sequence="2" value="mixed"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="100" name="name" type="string"/>
+        <element label="Neutered" max_length="40" name="neutered" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Picture" max_length="40" name="picture" type="user_image"/>
+        <element label="Shots" max_length="40" name="shots" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
+                <element inactive_on_update="false" label="Adopted" sequence="2" value="adopted"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="adoption_centre"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

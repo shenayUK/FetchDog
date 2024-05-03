@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_938877_fetchapp.user" name="x_938877_fetchapp.user">3f38ac369739c650e15871571153af14</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-29 20:16:42</sys_created_on>
+        <sys_id>bb38ac369739c650e15871571153af17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3f38ac369739c650e15871571153af14</sys_name>
+        <sys_package display_value="FetchApp" source="x_938877_fetchapp">4a2828769775c650e15871571153af0d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FetchApp">4a2828769775c650e15871571153af0d</sys_scope>
+        <sys_update_name>sys_embedded_help_role_bb38ac369739c650e15871571153af17</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-29 20:16:42</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

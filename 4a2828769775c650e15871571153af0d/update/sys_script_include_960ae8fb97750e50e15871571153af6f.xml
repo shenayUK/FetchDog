@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_938877_fetchapp.fetchUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>fetchUtils</name>
+        <script><![CDATA[var fetchUtils = Class.create();
+fetchUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+createDog: function(){
+
+var dogName = this.getParameter('sysparm_dog_name');
+var dogAge = this.getParameter('sysparm_dog_age');
+var dogShots = this.getParameter('sysparm_dog_shots');
+var dogNeutered = this.getParameter('sysparm_dog_neutered');
+//insert dog 
+var newDog = new GlideRecord('x_938877_fetchapp_dogs');
+newDog.newRecord();
+newDog.name = dogName;
+newDog.age = dogAge;
+if(dogShots){
+newDog.shots = true;
+}
+if(dogNeutered){
+
+newDog.neutered = true;
+
+}
+var dogNumber = newDog.number.getDisplayValue();
+var sysID = newDog.insert();
+var dogLink = newDog.getLink();
+// return values
+return dogName + '|' + dogNumber + '|' + dogLink;
+
+},
+    type: 'fetchUtils'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 23:02:17</sys_created_on>
+        <sys_id>960ae8fb97750e50e15871571153af6f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>fetchUtils</sys_name>
+        <sys_package display_value="FetchApp" source="x_938877_fetchapp">4a2828769775c650e15871571153af0d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="FetchApp">4a2828769775c650e15871571153af0d</sys_scope>
+        <sys_update_name>sys_script_include_960ae8fb97750e50e15871571153af6f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 23:18:11</sys_updated_on>
+    </sys_script_include>
+</record_update>
